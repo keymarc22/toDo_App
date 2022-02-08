@@ -1,0 +1,12 @@
+.TodoCounter {
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 0;
+  padding: 1.2rem;
+  background-color: #FF3366;
+  color: #F6F7F8;
+  margin: 2rem 0;
+  -webkit-box-shadow: -5px 10px 12px -4px rgba(173,173,173,1);
+  -moz-box-shadow: -5px 10px 12px -4px rgba(173,173,173,1);
+  box-shadow: -5px 10px 12px -4px rgba(173,173,173,1);
+}

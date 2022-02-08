@@ -1,0 +1,62 @@
+.TodoForm {
+  background-color: white;
+  width: 30rem;
+  height: 20rem;
+  border-radius: 10px;
+}
+
+.TodoForm form {
+  padding: 2rem;
+  display: grid;
+  grid-template-rows: 3;
+}
+
+.TodoForm form label {
+  margin-bottom: 2rem;
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.TodoForm form textarea {
+  border: 2px solid rgb(179, 179, 179);
+  border-radius: 5px;
+  height: 4rem;
+  resize: vertical;
+  margin-bottom: 1.5rem;
+}
+
+.TodoForm textarea:focus {
+  border-color: #61dafb;
+  outline: 3px solid transparent;
+}
+
+.buttons {
+  padding: 0 2rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+
+.buttons button {
+  height: 2rem;
+  border-radius: 10px;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.submitButton {
+  background-color: #FF3366;
+  color: white;
+  font-weight: 400;
+}
+
+.submitButton:hover {
+  background-color: #d45373;
+}
+
+.cancelButton:hover {
+  background-color: #b3b3b3;
+}
