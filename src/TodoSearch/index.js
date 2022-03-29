@@ -1,11 +1,8 @@
 import React from 'react';
 import './index.css'
 import { FaSistrix } from 'react-icons/fa';
-import { TodoContext } from '../TodoContext';
 
-function TodoSearch(){
-  const { search, setSearching } = React.useContext(TodoContext);
-
+function TodoSearch({search, setSearching}){
   const onSearchValueChange = (event) => {
     setSearching(event.target.value);
   }
