@@ -11,7 +11,7 @@ import { TodoError } from "../TodoError";
 import { TodoLoading } from "../TodoLoading";
 import { EmptyTodos } from "../EmptyTodos";
 import { EmptySearchResults } from "../EmptySearchResult";
-import { ChangeAlertWithStorageListener } from "../ChangeAlert";
+import { ChangeAlert } from "../ChangeAlert";
 
 function App() {
   const {
@@ -52,15 +52,6 @@ function App() {
         onLoading={() => <TodoLoading />}
         onEmptyTodos={() => <EmptyTodos />}
         onEmptySearchResults={<EmptySearchResults searchingText={search} />}
-        // render={todo => (
-        //   <TodoItem
-        //     key={todo.text}
-        //     text={todo.text}
-        //     completed= {todo.completed}
-        //     onComplete={() => completeTodo(todo.text)}
-        //     onDelete={() => deleteTodo(todo.text)}
-        //   />
-        // )}
       >
         {(todo) => (
           <TodoItem
@@ -80,7 +71,7 @@ function App() {
       )}
       <CreateTodoButton setOpenModal={setOpenModal} />
 
-      <ChangeAlertWithStorageListener sincronize={sincronizeTodos}/>
+      <ChangeAlert sincronize={sincronizeTodos}/>
     </React.Fragment>
   );
 }
