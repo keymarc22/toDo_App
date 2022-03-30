@@ -26,6 +26,10 @@ svg {
   padding-left: 1rem
 }
 
+.TodoSearch:disabled, .TodoCounter--loading {
+  opacity: 25%;
+}
+
 .TodoSearch:focus {
   outline-color: #20A4F3;
   padding-left: 1rem
