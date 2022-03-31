@@ -1,6 +1,6 @@
 .container {
   height: 4rem;
-  background-color: white;
+  background-color: var(--cultured);
   margin-bottom: 1rem;
   -webkit-box-shadow: -15px 10px 13px -9px rgba(199,199,199,1);
   -moz-box-shadow: -15px 10px 13px -9px rgba(199,199,199,1);
@@ -16,8 +16,8 @@
   animation-iteration-count: infinite;
   animation-name: preloadAnimation;
   animation-timing-function: linear;
-  background: #f6f7f8;
-  background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+  background: var(--cultured);
+  background: linear-gradient(to right, var(--cultured) 8%, #dddddd 18%, #eeeeee 33%);
 }
 
 @keyframes preloadAnimation{

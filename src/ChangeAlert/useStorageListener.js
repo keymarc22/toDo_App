@@ -5,7 +5,6 @@ function useStorageListener(sincronize) {
 
   window.addEventListener("storage", (change) => {
     if (change.key === "TODOS_V1") {
-      console.log("cambio");
       setStorageChange(true);
     }
   });
@@ -17,7 +16,8 @@ function useStorageListener(sincronize) {
 
     return {
       show: storageChange,
-      toggleShow: toggleShow
+      toggleShow: toggleShow,
+      setStorageChange: setStorageChange
     }
 }
 

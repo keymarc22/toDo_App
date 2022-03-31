@@ -1,15 +1,17 @@
 .TodoItem {
   display: grid;
-  height: 4rem;
+  min-height: 4rem;
   grid-template-columns: 1fr 4fr auto;
-  background-color: white;
+  background-color: var(--cultured);
   margin-bottom: 1rem;
+  overflow: hidden;
   -webkit-box-shadow: -15px 10px 13px -9px rgba(199,199,199,1);
   -moz-box-shadow: -15px 10px 13px -9px rgba(199,199,199,1);
   box-shadow: -15px 10px 13px -9px rgba(199,199,199,1);
 }
 
 .TodoItem p {
+  word-break: break-all;
   align-self: center;
 }
 
@@ -22,7 +24,7 @@ span.Icon-check {
 }
 
 span.Icon-check--active {
-  color: #2EC4B6;
+  color: var(--tiffany-blue);
 }
 
 .TodoItem-p--complete {
@@ -30,12 +32,19 @@ span.Icon-check--active {
 }
 
 span.Icon-delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: 50%;
   cursor: pointer;
   margin-top: 0.5rem;
-  margin-right: 0.5rem;
-  color: #000000a1;
+  margin-right: 0.7rem;
+  color: var(--rich-black--figra);
 }
 
 span.Icon-delete:hover {
-  color: #FF3366;
+  color: var(--radical-red);
+  background-color: #d3d3d39d;
 }

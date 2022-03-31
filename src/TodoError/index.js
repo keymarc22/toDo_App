@@ -2,7 +2,10 @@ import React from 'react';
 
 function TodoError() {
   return (
-    <p> Hubo un error </p>
+    <React.Fragment>
+      <h2>Opps!</h2>
+      <p> Hubo un error </p>
+    </React.Fragment>
   )
 }
 

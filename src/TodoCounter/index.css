@@ -1,12 +1,27 @@
-.TodoCounter {
-  font-size: 1.3rem;
-  text-align: center;
-  margin: 0;
-  padding: 1.2rem;
-  background-color: #FF3366;
-  color: #F6F7F8;
-  margin: 2rem 0;
-  -webkit-box-shadow: -5px 10px 12px -4px rgba(173,173,173,1);
-  -moz-box-shadow: -5px 10px 12px -4px rgba(173,173,173,1);
-  box-shadow: -5px 10px 12px -4px rgba(173,173,173,1);
+.header-container {
+  background-color: var(--blue-jeans);
+  color: var(--cultured);
+  padding: 0.7rem 1.5rem;
+  height: 192px;
+  border-radius: 15px;
+}
+
+.header-menu--button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.title-section h2{
+  font-size: 1.6rem;
+}
+
+.details-section h2{
+  margin: 5px 0;
+  font-size: 1rem;
+  font-weight: 400;
 }

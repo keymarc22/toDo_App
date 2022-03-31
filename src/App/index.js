@@ -1,7 +1,6 @@
 import React from "react";
 import { useTodos } from "./useTodos";
 import { TodoCounter } from "../TodoCounter/";
-import { TodoSearch } from "../TodoSearch/";
 import { TodoList } from "../TodoList/";
 import { TodoItem } from "../TodoItem/";
 import { CreateTodoButton } from "../CreateTodoButton/";
@@ -36,9 +35,6 @@ function App() {
         loading={loading}
         totalTodos={totalTodos}
         completedTodos={completedTodos}
-      />
-      <TodoSearch
-        loading={loading}
         search={search}
         setSearching={setSearching}
       />

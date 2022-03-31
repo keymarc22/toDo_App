@@ -1,7 +1,7 @@
 .TodoForm {
-  background-color: white;
+  background-color: var(--cultured);
   width: 30rem;
-  height: 20rem;
+  min-height: 18rem;
   border-radius: 10px;
 }
 
@@ -13,7 +13,7 @@
 
 .TodoForm form label {
   margin-bottom: 2rem;
-  color: black;
+  color: var(--rich-black--figra);
   text-align: center;
   font-size: 1.5rem;
   font-weight: 700;
@@ -28,7 +28,7 @@
 }
 
 .TodoForm textarea:focus {
-  border-color: #61dafb;
+  border-color: var(--tiffany-blue);
   outline: 3px solid transparent;
 }
 
@@ -48,8 +48,8 @@
 }
 
 .submitButton {
-  background-color: #FF3366;
-  color: white;
+  background-color: var(--radical-red);
+  color: var(--cultured);
   font-weight: 400;
 }
 

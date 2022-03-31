@@ -1,18 +1,27 @@
+:root {
+  --rich-black--figra: #011627;
+  --radical-red-shadow: #ee5279;
+  --radical-red: #ff3366;
+  --tiffany-blue: #2ec4b6;
+  --cultured: #f6f7f8;
+  --blue-jeans: #20a4f3;
+}
+
 body {
   display: flex;
   width: 100%;
   flex-direction: column;
   margin: 0;
   padding: 0;
-  background: #F6F7F8;
-  color: #011627;
+  background: var(--cultured);
+  color: var(--rich-black--figra);
   font-family: 'Source Sans Pro', sans-serif;
 }
 
 #root {
-  padding: 2rem 20%;
+  padding: 2rem 5%;
   position: relative;
-  min-height: 100vh;
+  height: 92vh;
 }
 
 @media screen and (min-width: 1268px) {
