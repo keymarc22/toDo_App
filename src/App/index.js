@@ -13,21 +13,26 @@ import { EmptySearchResults } from "../EmptySearchResult";
 import { ChangeAlert } from "../ChangeAlert";
 
 function App() {
+  const { states, statesUpdaters } = useTodos();
+
   const {
-    error,
     loading,
-    searchedTodos,
-    completeTodo,
-    deleteTodo,
-    openModal,
-    setOpenModal,
+    error,
     totalTodos,
     completedTodos,
     search,
+    searchedTodos,
+    openModal,
+  } = states;
+
+  const {
+    completeTodo,
+    deleteTodo,
+    setOpenModal,
     setSearching,
     addTodo,
-    sincronizeTodos
-  } = useTodos();
+    sincronizeTodos,
+  } = statesUpdaters;
 
   return (
     <React.Fragment>
@@ -67,7 +72,7 @@ function App() {
       )}
       <CreateTodoButton setOpenModal={setOpenModal} />
 
-      <ChangeAlert sincronize={sincronizeTodos}/>
+      <ChangeAlert sincronize={sincronizeTodos} />
     </React.Fragment>
   );
 }
